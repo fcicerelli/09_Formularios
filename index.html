@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+    <form action="" method="GET">
+        <div class="section-1">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" id="pass">
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="tel">Teléfono:</label>
+            <input type="tel" name="tel" id="tel">
+
+            <label for="dni">DNI:</label>
+            <input type="number" name="dni" id="dni">
+
+            <label for="date">Fecha de Nacimiento:</label>
+            <input type="date" name="nacimiento" id="date" value="2021-12-09">
+
+            <label for="file">Sube una imagen:</label>
+            <input type="file" name="image" accept=".jpg" id="file" multiple>
+
+            <label for="paises">Pais:</label>
+
+            <select name="pais" id="paises">
+                <option value="ar">Argentina</option>
+                <option value="br">Brasil</option>
+                <option value="" hidden selected>Selecciona un país</option>
+            </select>
+
+            <label for="message">Escriba su mensaje:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="section-2">
+            <h2>¿Cuál es tu hobbie favorito?</h2>
+            
+                <label for="prog">Programar</label>
+                <input type="radio" name="hobbies" id="prog" value="programar" checked>
+            
+                <label for="dib">Dibujar</label>
+                <input type="radio" name="hobbies" id="dib" value="dibujar">
+            
+                <label for="leer">Leer</label>
+                <input type="radio" name="hobbies" id="leer" value="leer">
+            
+            <h2>¿Qué te gusta leer?</h2>
+            
+                <label for="ficcion">Ficción</label>
+                <input type="checkbox" name="read" id="ficcion" value="si-fi">
+            
+                <label for="drama">Drama</label>
+                <input type="checkbox" name="read" id="drama" value="drama">
+            
+                <label for="terror">Terror</label>
+                <input type="checkbox" name="read" id="terror" value="terror">
+        </div>
+        <div class="buttons">
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </div>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    width: 50%;
+}
+.section-1 input:focus {
+    background-color: aqua;
+}
+
+.section-1 textarea {
+    resize: none;
+}
+.section-1 textarea:focus {
+    background-color: coral;
+}
+
+.section-2 {
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
